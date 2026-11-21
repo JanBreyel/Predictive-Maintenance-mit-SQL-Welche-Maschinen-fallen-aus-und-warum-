@@ -21,14 +21,10 @@ Temperatur, Drehzahl, Drehmoment und Werkzeugverschleiß. Als Data Analyst beant
 
 ## 2. Die wichtigsten Ergebnisse auf einen Blick
 
-| Frage | Kennzahl | Quelle (View) | Ausgangswert | Was die Kennzahl zeigt |
-| ----- | -------- | ------------- | ------------ | ---------------------- |
-| **1. Welche Varianten und Betriebszustände sind ausfallgefährdet?** L |
-| **2. Welche Faktoren hängen mit Ausfällen zusammen?** | Ausfallrate je Risikofaktor (Verschleiß, Drehmoment, Drehzahl, Temperaturdifferenz, Leistung) | `vw_operational_risk` | Verschleiß ab 200 Min: 15,4 %, Drehmoment ab 60 Nm: 41,8 %, Drehzahl unter 1.300 rpm: 23,2 %, Temperaturdifferenz unter 8,6 K: 17,5 % |
-| **3. Welche Fehlerarten treten am häufigsten auf?** | Verteilung der Fehlerarten, gesamt und je Variante | `vw_failure_modes`, `vw_failure_modes_by_variant` | Am häufigsten: Wärmeabfuhr (HDF), Überlast (OSF), Leistung (PWF); bei L 87 der 98 OSF-Fälle | Worauf Wartungsteams geschult werden und wo die Maßnahmen ansetzen |
-| **4. Wie lässt sich die Wartung priorisieren?** | Anteil der Ausfälle in P1-Segmenten | `vw_maintenance_priority` | 4 P1-Segmente = 43 % aller Ausfälle auf 3,4 % der Produktion | Ob die Wartung auf die richtigen Segmente konzentriert ist und die Priorisierung greift |
-| **5. Welche Kennzahlen sollte das Management überwachen?** | Gesamt-Ausfallrate | `vw_failure_overview` | 3,39 % (339 von 10.000) | Baseline, an der sich der Erfolg aller Maßnahmen messen lässt |
-| | Anzahl Datenqualitäts-Warnungen | `vw_data_quality_checks` | 9 Ausfälle ohne Fehlerart, 18 RNF ohne Ausfall, 24 Mehrfach-Fehlerarten | Wie verlässlich alle anderen Kennzahlen sind |
+Welche Produktvarianten und Betriebszustände sind besonders ausfallgefährdet? -> Variante L, bei Drehmoment ab 60 Nm, Werkzeugverschleiß ab 200 Minuten, Drehzahl unter 1.300 rpm und Temperaturdifferenz unter 8,6 K
+Welche Faktoren hängen mit Ausfällen zusammen? -> Werkzeugverschleiß und Drehmoment, am stärksten in Kombination
+Welche Fehlerarten treten am häufigsten auf? -> Wärmeabfuhr (HDF), Überlast (OSF) und Leistung (PWF)
+Wie lässt sich die Wartung priorisieren? -> Zuerst kontrollieren auf hohen Verschleiß und hohes Drehmoment, auérdem Werkzeuge vor 200 Minuten wechseln
 
 ---
 
