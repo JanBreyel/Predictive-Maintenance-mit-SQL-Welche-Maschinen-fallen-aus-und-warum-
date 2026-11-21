@@ -132,7 +132,7 @@ Begriffe, die in den Ergebnissen vorkommen:
 
 ### A2: Ist der Unterschied zwischen den Varianten Zufall?
 
-![A2](images/A2.png)
+![A2](https://github.com/JanBreyel/Predictive-Maintenance-mit-SQL-Welche-Maschinen-fallen-aus-und-warum-/blob/main/A2.png)
 
 **Was man sieht:** Zu jeder Ausfallrate gehört ein Bereich, in dem der wahre Wert mit 95 % Wahrscheinlichkeit liegt (Konfidenzintervall): L 3,43–4,41 %, M 2,18–3,36 %, H 1,21–2,98 %.
 
@@ -144,7 +144,7 @@ Begriffe, die in den Ergebnissen vorkommen:
 
 ### B: Welche Fehlerarten treten bei welcher Variante auf?
 
-![B](images/B.png)
+![B](https://github.com/JanBreyel/Predictive-Maintenance-mit-SQL-Welche-Maschinen-fallen-aus-und-warum-/blob/main/B.png)
 
 **Was man sieht:** Die Anzahl der Fehlerarten je Variante. TWF = Werkzeugverschleiß, HDF = Wärmeabfuhr, PWF = Leistung, OSF = Überlastung, RNF = zufällig. Bei L treten 87 der 98 Überlastungsfälle (OSF) auf, das sind 1,45 % der L-Produktion. Bei M sind es 0,30 % und bei H 0,20 %.
 
@@ -156,7 +156,7 @@ Begriffe, die in den Ergebnissen vorkommen:
 
 ### C: Ab wann steigt das Risiko durch Werkzeugverschleiß?
 
-![C](images/C.png)
+![C](https://github.com/JanBreyel/Predictive-Maintenance-mit-SQL-Welche-Maschinen-fallen-aus-und-warum-/blob/main/C.png)
 
 **Was man sieht:** Die Ausfallrate je 25 Minuten Werkzeugverschleiß. Bis 199 Minuten liegt sie bei etwa 2–3 %. Bei 200 bis 224 Minuten springt sie auf 13,5 %, bei 225 bis 249 Minuten auf 30,4 %. Die letzte Stufe (250 bis 274 Minuten) hat nur 2 Datensätze und sagt nichts aus. Die Spalte `change_vs_previous_step_pp` zeigt die Veränderung zur vorherigen Stufe in Prozentpunkten.
 
@@ -168,7 +168,7 @@ Begriffe, die in den Ergebnissen vorkommen:
 
 ### D: Wie wirkt sich das Drehmoment aus?
 
-![D](images/D.png)
+![D](https://github.com/JanBreyel/Predictive-Maintenance-mit-SQL-Welche-Maschinen-fallen-aus-und-warum-/blob/main/D.png)
 
 **Was man sieht:** Die Datensätze wurden nach Drehmoment sortiert und in zehn gleich große Gruppen zu je 1.000 Datensätzen geteilt (Dezile). Im obersten Dezil (52,6 bis 76,6 Nm) fallen 18,4 % aus, im untersten (3,8 bis 27,2 Nm) 3,8 %. In den mittleren Gruppen liegt die Rate meist unter 1 %.
 
@@ -180,7 +180,7 @@ Begriffe, die in den Ergebnissen vorkommen:
 
 ### E: Wirkt hoher Verschleiß bei allen Varianten gleich?
 
-![E](images/E.png)
+![E](https://github.com/JanBreyel/Predictive-Maintenance-mit-SQL-Welche-Maschinen-fallen-aus-und-warum-/blob/main/E.png)
 
 **Was man sieht:** Die Ausfallrate je Variante und Verschleißband, mit einem Ranking innerhalb jeder Variante. Bei allen drei Varianten steht „hoher Verschleiß (ab 200 Minuten)“ auf Rang 1: L 18,29 %, H 10,67 %, M 10,31 %.
 
@@ -192,7 +192,7 @@ Begriffe, die in den Ergebnissen vorkommen:
 
 ### F: Welche Kombinationen sind besonders gefährlich?
 
-![F](images/F.png)
+![F](https://github.com/JanBreyel/Predictive-Maintenance-mit-SQL-Welche-Maschinen-fallen-aus-und-warum-/blob/main/E.png)
 
 **Was man sieht:** Kombinationen aus Variante, Verschleiß und Drehmoment mit mindestens 30 Datensätzen, deren Ausfallrate mehr als dreimal so hoch ist wie im Durchschnitt. Am höchsten ist Variante L bei hohem Verschleiß und 50 bis 59,9 Nm mit 62,7 % (42 von 67). Bei Variante L mit niedrigem Verschleiß, aber mindestens 60 Nm sind es 35,2 %.
 
@@ -204,7 +204,7 @@ Begriffe, die in den Ergebnissen vorkommen:
 
 ### G: Hängen die Messwerte linear mit Ausfällen zusammen?
 
-![G](images/G.png)
+![G](https://github.com/JanBreyel/Predictive-Maintenance-mit-SQL-Welche-Maschinen-fallen-aus-und-warum-/blob/main/G.png)
 
 **Was man sieht:** Korrelationswerte zwischen −1 und +1. Je weiter von 0 entfernt, desto stärker der lineare Zusammenhang mit dem Ausfall. Der höchste Wert ist das Drehmoment mit 0,19, danach die Leistung (0,18) und die Temperaturdifferenz (−0,11).
 
@@ -216,7 +216,7 @@ Begriffe, die in den Ergebnissen vorkommen:
 
 ### H: Wo sollte die Wartung zuerst ansetzen?
 
-![H](images/H.png)
+![H](https://github.com/JanBreyel/Predictive-Maintenance-mit-SQL-Welche-Maschinen-fallen-aus-und-warum-/blob/main/H.png)
 
 **Was man sieht:** Alle Kombinationen aus Verschleiß und Drehmoment mit Ausfallrate, Risikoindex und dem Anteil an allen Ausfällen. Die Spalte `cumulative_failure_share_pct` addiert die Anteile von oben nach unten (Pareto-Prinzip). Die Segmente sind in drei Prioritäten eingeteilt:
 
