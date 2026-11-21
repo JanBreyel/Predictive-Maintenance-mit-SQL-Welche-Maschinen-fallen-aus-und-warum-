@@ -70,7 +70,7 @@ ai4i2020.csv
 | `02_staging.sql` | Typumwandlung, abgeleitete Spalten, Data-Quality-Checks (`vw_data_quality_checks`) |
 | `03_analytics.sql` | Faktentabelle, Dimensionen, Zuordnungstabelle für Fehlerarten, Bänder für Betriebszustände |
 | `04_reporting_views.sql` | Sechs Business-Views für Management und BI-Tools |
-| `05_advanced_analysis.sql` | Die Analysen A1 bis H (CTEs, Window Functions, LAG, NTILE, Subqueries, CORR) |
+| `05_advanced_analysis.sql` | Die Analysen A1 bis H |
 
 ### Ausführung
 
