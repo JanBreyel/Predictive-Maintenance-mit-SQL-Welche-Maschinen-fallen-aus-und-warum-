@@ -21,10 +21,17 @@ Temperatur, Drehzahl, Drehmoment und Werkzeugverschleiß. Als Data Analyst beant
 
 ## 2. Die wichtigsten Ergebnisse auf einen Blick
 
-Welche Produktvarianten und Betriebszustände sind besonders ausfallgefährdet? -> Variante L, bei Drehmoment ab 60 Nm, Werkzeugverschleiß ab 200 Minuten, Drehzahl unter 1.300 rpm und Temperaturdifferenz unter 8,6 K
-Welche Faktoren hängen mit Ausfällen zusammen? -> Werkzeugverschleiß und Drehmoment, am stärksten in Kombination
-Welche Fehlerarten treten am häufigsten auf? -> Wärmeabfuhr (HDF), Überlast (OSF) und Leistung (PWF)
-Wie lässt sich die Wartung priorisieren? -> Zuerst kontrollieren auf hohen Verschleiß und hohes Drehmoment, auérdem Werkzeuge vor 200 Minuten wechseln
+1. Welche Produktvarianten und Betriebszustände sind besonders ausfallgefährdet? 
+-> Variante L, bei Drehmoment ab 60 Nm, Werkzeugverschleiß ab 200 Minuten, Drehzahl unter 1.300 rpm und Temperaturdifferenz unter 8,6K
+   
+2. Welche Faktoren hängen mit Ausfällen zusammen? 
+-> Werkzeugverschleiß und Drehmoment, am stärksten in Kombination
+   
+3. Welche Fehlerarten treten am häufigsten auf?
+-> Wärmeabfuhr (HDF), Überlast (OSF) und Leistung (PWF)
+   
+4. Wie lässt sich die Wartung priorisieren? 
+-> Zuerst kontrollieren auf hohen Verschleiß und hohes Drehmoment, auérdem Werkzeuge vor 200 Minuten wechseln
 
 ---
 
