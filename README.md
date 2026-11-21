@@ -31,7 +31,7 @@ Temperatur, Drehzahl, Drehmoment und Werkzeugverschleiß. Als Data Analyst beant
 -> Wärmeabfuhr (HDF), Überlast (OSF) und Leistung (PWF)
    
 4. Wie lässt sich die Wartung priorisieren? 
--> Zuerst kontrollieren auf hohen Verschleiß und hohes Drehmoment, auérdem Werkzeuge vor 200 Minuten wechseln
+-> Zuerst kontrollieren auf hohen Verschleiß und hohes Drehmoment, außerdem Werkzeuge vor 200 Minuten wechseln
 
 ---
 
