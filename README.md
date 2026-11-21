@@ -18,7 +18,6 @@ Temperatur, Drehzahl, Drehmoment und Werkzeugverschleiß. Als Data Analyst beant
 2. Welche Faktoren hängen mit Ausfällen zusammen?
 3. Welche Fehlerarten treten am häufigsten auf?
 4. Wie lässt sich die Wartung priorisieren?
-5. Welche Kennzahlen sollte das Management regelmäßig überwachen?
 
 ## 2. Die wichtigsten Ergebnisse auf einen Blick
 
