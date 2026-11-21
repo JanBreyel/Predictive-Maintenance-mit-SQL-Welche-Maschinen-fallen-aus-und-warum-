@@ -21,14 +21,15 @@ Temperatur, Drehzahl, Drehmoment und Werkzeugverschleiß. Als Data Analyst beant
 
 ## 2. Die wichtigsten Ergebnisse auf einen Blick
 
-| Frage | Antwort | Empfohlene Aktion |
-|---|---|---|
-| Wie oft fallen Maschinen aus? | 339 von 10.000 Datensätzen = **3,39 %** | Als Ausgangswert (Baseline) für alle Maßnahmen verwenden |
-| Welche Variante ist am anfälligsten? | **Variante L** mit 3,92 % (H: 2,09 %) | Ursachenanalyse bei L zuerst |
-| Welche Fehlerart ist am häufigsten? | Wärmeabfuhr (HDF), Überlast (OSF), Leistung (PWF) | Maßnahmen auf diese drei Fehlerarten konzentrieren |
-| Wann steigt das Risiko stark? | Ab **200 Minuten** Werkzeugverschleiß (13,5 % statt ca. 2–3 %) | Werkzeuge spätestens vor 200 Minuten wechseln |
-| Welche Betriebszustände sind kritisch? | Drehmoment ab 60 Nm, Drehzahl unter 1.300 rpm, Temperaturdifferenz unter 8,6 K | Diese Bereiche im Betrieb überwachen bzw. vermeiden |
-| Wo lohnt sich Wartung zuerst? | 4 Risikosegmente = **43 % aller Ausfälle** auf nur 3,4 % der Produktion | Wartung zuerst auf diese Segmente konzentrieren |
+| Frage | Kennzahl | Quelle (View) | Ausgangswert | Was die Kennzahl zeigt |
+| ----- | -------- | ------------- | ------------ | ---------------------- |
+| **1. Welche Varianten und Betriebszustände sind ausfallgefährdet?** | Ausfallrate je Produktvariante | `vw_failure_by_variant` | L 3,92 %, M 2,77 %, H 2,09 % | Bei welcher Variante der Handlungsbedarf zuerst liegt (aktuell L) |
+| | Anteil der Produktion in Hochrisiko-Bereichen | `vw_operational_risk` | Verschleiß ab 200 Min: 801 von 10.000 Datensätzen, Drehmoment ab 60 Nm: 239, Drehzahl unter 1.300 rpm: 211 | Wie viel Produktion in kritischen Zuständen läuft, bevor Ausfälle entstehen |
+| **2. Welche Faktoren hängen mit Ausfällen zusammen?** | Ausfallrate je Risikofaktor (Verschleiß, Drehmoment, Drehzahl, Temperaturdifferenz, Leistung) | `vw_operational_risk` | Verschleiß ab 200 Min: 15,4 %, Drehmoment ab 60 Nm: 41,8 %, Drehzahl unter 1.300 rpm: 23,2 %, Temperaturdifferenz unter 8,6 K: 17,5 % | Welche Schwellenwerte überschritten werden und wie stark das Risiko dort steigt |
+| **3. Welche Fehlerarten treten am häufigsten auf?** | Verteilung der Fehlerarten, gesamt und je Variante | `vw_failure_modes`, `vw_failure_modes_by_variant` | Am häufigsten: Wärmeabfuhr (HDF), Überlast (OSF), Leistung (PWF); bei L 87 der 98 OSF-Fälle | Worauf Wartungsteams geschult werden und wo die Maßnahmen ansetzen |
+| **4. Wie lässt sich die Wartung priorisieren?** | Anteil der Ausfälle in P1-Segmenten | `vw_maintenance_priority` | 4 P1-Segmente = 43 % aller Ausfälle auf 3,4 % der Produktion | Ob die Wartung auf die richtigen Segmente konzentriert ist und die Priorisierung greift |
+| **5. Welche Kennzahlen sollte das Management überwachen?** | Gesamt-Ausfallrate | `vw_failure_overview` | 3,39 % (339 von 10.000) | Baseline, an der sich der Erfolg aller Maßnahmen messen lässt |
+| | Anzahl Datenqualitäts-Warnungen | `vw_data_quality_checks` | 9 Ausfälle ohne Fehlerart, 18 RNF ohne Ausfall, 24 Mehrfach-Fehlerarten | Wie verlässlich alle anderen Kennzahlen sind |
 
 ---
 
