@@ -120,7 +120,7 @@ Begriffe, die in den Ergebnissen vorkommen:
 
 ### A1: Welche Produktvariante fällt am häufigsten aus?
 
-![A1](images/A1.png)
+![A1]([images/A1.png](https://github.com/JanBreyel/Predictive-Maintenance-mit-SQL-Welche-Maschinen-fallen-aus-und-warum-/blob/main/A1.png))
 
 **Was man sieht:** Variante L fällt in 3,92 % der Fälle aus, M in 2,77 % und H in 2,09 %.
 
